@@ -1,0 +1,60 @@
+@import "./variable";
+
+
+
+
+
+.contact-page-section{
+    padding-top: 150px;
+    margin-bottom: 100px;
+
+
+    .contact-box{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 310px);
+        justify-content: center;
+
+
+        .box{
+            background-color: white;
+            margin: 40px;
+            height: 150px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 30px 10px;
+            box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.55);
+
+           
+            img{
+                height: 70px;
+            }
+            p{
+                font-weight: 600;
+            }
+        }
+    }
+
+    @media (max-width: 560px) {
+        .contact-box{
+            grid-template-columns: repeat(1, 300px);
+            justify-content: center;
+        }
+    
+    
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

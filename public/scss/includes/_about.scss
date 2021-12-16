@@ -1,0 +1,131 @@
+@import "./variable";
+
+
+.about-page{
+     padding-top: 100px; 
+    
+  .hero-img{
+      img{
+          height: 400px;
+      }
+  }
+
+  .hero-text{
+      padding: 30px 20px;
+      margin-bottom: 20px;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+.service-section{
+    // background-color: white;
+    // border-radius: 20px;
+    // padding: 50px 0px;
+    // box-shadow: 0px 6px 46px -7px rgba(0,0,0,0.55);
+    width: 95%;
+    margin: 1px auto;
+    padding-top: 200px;
+
+
+.ser-sec{
+   display: grid;
+   grid-template-columns: repeat(3, 300px);
+   justify-content: center;
+   margin: 1px auto;
+   width: 95%;
+
+   .service{  
+       padding: 30px 20px;
+       margin: 30px;
+       height: 250px;
+       border-radius: 20px;
+       text-align: center;
+       box-shadow: 0px 6px 40px -5px gray;
+       transition: 0.3s;
+
+      &:hover{
+          transform: translateY(-10px);
+      }
+
+
+       h3{
+           font-weight: 600;
+       }
+      
+       a{
+           text-decoration: none;
+           color: white;
+ 
+       }
+
+       img{
+           height: 60px; 
+           
+       }
+       
+   }
+
+button{
+    background-color: white;
+}
+
+}
+
+
+.service1, .service3{
+    background-color: $pink;
+}
+
+.service2, .service4{
+    background-color: $blue;
+}
+
+
+.service5{
+    background-color: $cream;
+}
+.service6{
+    background-color: $blue;
+}
+.service7{
+    background-color: $pink;
+}
+
+
+
+
+}
+
+
+@media(max-width: 990px) {
+
+    .service-section{
+        .ser-sec{
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+        }
+    }
+
+}
+
+@media(max-width: 665px) {
+
+    .service-section{
+        .ser-sec{
+            display: grid;
+            grid-template-columns: repeat(1, 300px);
+        }
+    }
+
+}
+
+
+
